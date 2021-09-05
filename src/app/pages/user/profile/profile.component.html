@@ -1,0 +1,88 @@
+<mat-card class="mt20">
+  <h1 class="text-center">Profile Setting</h1>
+  <div class="bootstrap-wrapper">
+    <div class="container">
+      <div class="row mt20" *ngIf="profile">
+        <div class="col-md-8 offset-md-2">
+          <form>
+            <mat-form-field class="w100" appearance="fill">
+              <mat-label>Name</mat-label>
+              <input
+                [(ngModel)]="profile[0].name"
+                type="text"
+                name="name"
+                matInput
+              />
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="fill">
+              <mat-label>Email</mat-label>
+              <input
+                [(ngModel)]="profile[0].email"
+                type="text"
+                name="email"
+                matInput
+              />
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="fill">
+              <mat-label>Date Of Birth</mat-label>
+              <input
+                [(ngModel)]="profile[0].dob"
+                type="text"
+                name="dob"
+                matInput
+              />
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="fill">
+              <mat-label>Mobile Number</mat-label>
+              <input
+                [(ngModel)]="profile[0].mobileNo"
+                type="text"
+                name="mobileNo"
+                matInput
+              />
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="fill">
+              <mat-label>Address</mat-label>
+              <input
+                [(ngModel)]="profile[0].address"
+                type="text"
+                name="address"
+                matInput
+              />
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="fill">
+              <mat-label>Father's Name</mat-label>
+              <input
+                [(ngModel)]="profile[0].fatherName"
+                type="text"
+                name="fatherName"
+                matInput
+              />
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="fill">
+              <mat-label>Account Number</mat-label>
+              <input
+                [(ngModel)]="profile[0].accountNo"
+                type="text"
+                name="accountNo"
+                matInput
+              />
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="fill">
+              <mat-label>IFSC Code</mat-label>
+              <input
+                [(ngModel)]="profile[0].ifscCode"
+                type="text"
+                name="ifscCode"
+                matInput
+              />
+            </mat-form-field>
+            <div class="container text-center">
+              <button mat-raised-button color="accent">UPDATE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>
